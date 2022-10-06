@@ -34,7 +34,7 @@ KukaDiverseObjectGrasping-v0:
   exploration_final_eps: 0.01
   # If True, you need to deactivate handle_timeout_termination
   # in the replay_buffer_kwargs
-  optimize_memory_usage: True
+  optimize_memory_usage: False
 
 # Almost Tuned
 CartPole-v1:
