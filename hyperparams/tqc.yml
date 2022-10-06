@@ -38,7 +38,7 @@ KukaDiverseObjectGrasping-v0:
     - stable_baselines3.common.atari_wrappers.WarpFrame
     - gym.wrappers.ResizeObservation:
         shape: [84, 84]
-  num_envs: 8
+  n_envs: 8
   frame_stack: 4
   policy: 'CnnPolicy'
   n_timesteps: !!float 5e5
