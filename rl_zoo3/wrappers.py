@@ -2,6 +2,12 @@ import gym
 import numpy as np
 from sb3_contrib.common.wrappers import TimeFeatureWrapper  # noqa: F401 (backward compatibility)
 
+class IntActionWrapper(gym.ActionWrapper):
+    def __init__(self, env):
+        super().__init__(env)
+        
+    def step(self, action):
+        return self.env.step(int(action))
 
 class DoneOnSuccessWrapper(gym.Wrapper):
     """
