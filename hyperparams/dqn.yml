@@ -18,8 +18,8 @@ atari:
   optimize_memory_usage: False
   
 KukaDiverseObjectGrasping-v0:
-  #env_wrapper:
-  #  - stable_baselines3.common.atari_wrappers.AtariWrapper
+  env_wrapper:
+    - stable_baselines3.common.atari_wrappers.AtariWrapper
   frame_stack: 4
   policy: 'CnnPolicy'
   n_timesteps: !!float 1e6
