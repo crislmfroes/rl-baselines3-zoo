@@ -19,6 +19,8 @@ atari:
   
 KukaDiverseObjectGrasping-v0:
   env_wrapper:
+    - stable_baselines3.common.atari_wrappers.MaxAndSkipEnv:
+        skip: 4
     - stable_baselines3.common.atari_wrappers.WarpFrame
     - gym.wrappers.ResizeObservation:
         shape: [84, 84]
