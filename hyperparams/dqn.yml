@@ -24,6 +24,7 @@ KukaDiverseObjectGrasping-v0:
     - stable_baselines3.common.atari_wrappers.WarpFrame
     - gym.wrappers.ResizeObservation:
         shape: [84, 84]
+    - rl_zoo3.wrappers.IntActionWrapper
   frame_stack: 4
   policy: 'CnnPolicy'
   n_timesteps: !!float 1e6
