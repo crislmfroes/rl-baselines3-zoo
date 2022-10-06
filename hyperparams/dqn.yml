@@ -27,11 +27,11 @@ KukaDiverseObjectGrasping-v0:
     - rl_zoo3.wrappers.IntActionWrapper
   frame_stack: 4
   policy: 'CnnPolicy'
-  n_timesteps: !!float 1e6
+  n_timesteps: !!float 1e5
   buffer_size: 100000
   learning_rate: !!float 1e-4
   batch_size: 32
-  learning_starts: 100000
+  learning_starts: 1000
   target_update_interval: 1000
   train_freq: 4
   gradient_steps: 1
