@@ -21,7 +21,7 @@ KukaDiverseObjectGrasping-v0:
   env_wrapper:
     - gym.wrappers.GrayScaleObservation
     - gym.wrappers.ResizeObservation:
-        shape: (64,64)
+        shape: tuple(64,64)
   frame_stack: 4
   policy: 'CnnPolicy'
   n_timesteps: !!float 1e6
