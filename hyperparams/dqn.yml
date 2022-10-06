@@ -19,11 +19,7 @@ atari:
   
 KukaDiverseObjectGrasping-v0:
   env_wrapper:
-    - gym.wrappers.GrayScaleObservation
-    - gym.wrappers.ResizeObservation:
-        shape: [64, 64]
-    - gym.wrappers.FrameStack:
-        num_stack: 1
+    - stable_baselines3.common.atari_wrappers.WarpFrame
   frame_stack: 4
   policy: 'CnnPolicy'
   n_timesteps: !!float 1e6
